@@ -1,4 +1,15 @@
 .venv
 tests/__pycache__/*
-*.рус
+tests/__pycache__/conftest.cpython-311-pytest-9.0.2.pyc
+tests/__pycache__/conftest.cpython-311-pytest-9.0.3.pyc
+tests/__pycache__/lokators.cpython-311.pyc
+tests/__pycache__/test_enter_to_account.cpython-311-pytest-9.0.2.pyc
+tests/__pycache__/test_enter_to_account.cpython-311-pytest-9.0.3.pyc
+tests/__pycache__/test_entrance.cpython-311-pytest-9.0.2.pyc
+tests/__pycache__/test_exit_from_account.cpython-311-pytest-9.0.3.pyc
+tests/__pycache__/test_exit_from_account.cpython-311-pytest-9.0.2.pyc
+tests/__pycache__/test_registration.cpython-311-pytest-9.0.2.pyc
+tests/__pycache__/test_registration.cpython-311-pytest-9.0.3.pyc
+tests/__pycache__/test_section_constructor.cpython-311-pytest-9.0.2.pyc
+tests/__pycache__/test_section_constructor.cpython-311-pytest-9.0.3.pyc
 .pytest_cache
