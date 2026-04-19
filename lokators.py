@@ -20,6 +20,8 @@ class Lokators_name:
     BUTTON_PERSONAL_ACCOUNT=(By.XPATH, ".//p[contains(text(),'Личный Кабинет')]")
     #Кнопка Войти на форме регистрации и восстановление пароля
     BUTTON_ENTER_ACCOUNT_REGISTRATION=(By.XPATH, ".//a[text()='Войти']")
+    #Сообщение о некорректном пароле
+    MESSAGE_UNCORRECT=(By.XPATH, ".//p[contains(text(),'Некорректный пароль')]")
     
     #Кнопка Отмена при переходе в личный кабинет
     BUTTON_CANCEL=(By.XPATH, ".//button[text()='Отмена']")
