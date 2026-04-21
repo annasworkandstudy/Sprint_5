@@ -10,7 +10,7 @@ class TestAccountEnter:
         driver.find_element(*Lokators_name.INPUT_EMAIL).send_keys(DataReg.email)
         driver.find_element(*Lokators_name.INPUT_PASSWORD).send_keys(DataReg.password)
         driver.find_element(*Lokators_name.BUTTON_ACCOUNT_ENTER).click()
-        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))
+        assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))
 
     def test_enter_personal_account_main_page(self, driver):
         driver.get('https://stellarburgers.education-services.ru/')
@@ -18,7 +18,7 @@ class TestAccountEnter:
         driver.find_element(*Lokators_name.INPUT_EMAIL).send_keys(DataReg.email)
         driver.find_element(*Lokators_name.INPUT_PASSWORD).send_keys(DataReg.password)
         driver.find_element(*Lokators_name.BUTTON_ACCOUNT_ENTER).click()
-        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))
+        assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))
 
     def test_enter_from_registration(self, driver):
         driver.get('https://stellarburgers.education-services.ru/register')
@@ -26,7 +26,7 @@ class TestAccountEnter:
         driver.find_element(*Lokators_name.INPUT_EMAIL).send_keys(DataReg.email)
         driver.find_element(*Lokators_name.INPUT_PASSWORD).send_keys(DataReg.password)
         driver.find_element(*Lokators_name.BUTTON_ACCOUNT_ENTER).click()
-        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))
+        assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))
     
     def test_enter_from_recovery(self, driver):
         driver.get('https://stellarburgers.education-services.ru/forgot-password')
@@ -34,4 +34,4 @@ class TestAccountEnter:
         driver.find_element(*Lokators_name.INPUT_EMAIL).send_keys(DataReg.email)
         driver.find_element(*Lokators_name.INPUT_PASSWORD).send_keys(DataReg.password)
         driver.find_element(*Lokators_name.BUTTON_ACCOUNT_ENTER).click()
-        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))
+        assert WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Lokators_name.BUTTON_ORDER))

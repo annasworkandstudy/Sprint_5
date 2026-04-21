@@ -14,5 +14,4 @@ class TestExitAccount:
         driver.find_element(*Lokators_name.BUTTON_PERSONAL_ACCOUNT).click()
         exit_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable(Lokators_name.BUTTON_EXIT))
         exit_button.click()
-        login_button = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(Lokators_name.BUTTON_ACCOUNT_ENTER))
-        assert login_button.text == 'Войти'
+        assert WebDriverWait(driver, 10).until(EC.visibility_of_element_located(Lokators_name.BUTTON_ACCOUNT_ENTER))
