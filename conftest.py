@@ -1,6 +1,8 @@
 import pytest
 from selenium import webdriver
 import random
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 @pytest.fixture
 def driver():
@@ -17,3 +19,7 @@ def gen_data():
         'email': f'anna_lastname_{num}@yandex.ru',
         'password': f'pass{num}'
     }
+
+@pytest.fixture
+def wait(driver):
+    return WebDriverWait(driver, 10)
